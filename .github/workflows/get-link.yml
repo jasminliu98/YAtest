@@ -8,4 +8,5 @@ jobs:
       - name: Run yt-dlp
         run: |
           pip install yt-dlp
-          yt-dlp -g "https://www.facebook.com/watch/?v=VIDEO_ID"
+          yt-dlp -g "https://scontent-sin2-8-xx.fbcdn.cloud/o2/v/t2/f2/m366/42e287ca-40e7-4ffd-bb5d-6a1ec014f404.m3u8" \
+            --add-header "Referer:https://www.facebook.com"
