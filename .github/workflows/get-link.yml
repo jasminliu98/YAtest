@@ -1,0 +1,11 @@
+name: Get Video Link
+on: [workflow_dispatch]
+
+jobs:
+  get-link:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run yt-dlp
+        run: |
+          pip install yt-dlp
+          yt-dlp -g "https://www.facebook.com/watch/?v=VIDEO_ID"
